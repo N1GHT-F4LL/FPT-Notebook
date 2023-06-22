@@ -1,0 +1,9 @@
+    function isPalindrome(string):
+    left = 0
+    right = length(string) - 1
+    while left < right do:
+        if string[left] is not equal to string[right] then:
+            return false
+        left = left + 1
+        right = right - 1
+    return true
