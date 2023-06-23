@@ -169,12 +169,121 @@ Tiếp theo, ngoài: $2^3 \mod 22$. Lập phương 2 được 8, và sau đó l�
 
 Do đó, $(212 \mod 15)^3 \mod 22 = 8$.
 
-### Q9:
+### Q9: Use the Euclidean algorithm to find
 
-### Q10:
+> Thuật toán Euclide giúp chúng ta tìm ước chung lớn nhất bằng cách chia nhiều lần số lớn hơn cho số bé hơn và lấy phần dư cho đến khi số dư bằng 0. Sau đó, gcd là phần còn lại khác không cuối cùng gặp phải trong quy trình.
 
-### Q11:
+1. gcd(1, 5) = 1
 
-### Q12:
+$$
+\begin{align*}
+5 &= 1 \times 5 + 0 \\
+1 &= 0 \times 1 + 1 \\
+\end{align*}
+$$
 
-### Q13:
+2. gcd(100, 101) = 1
+
+$$
+\begin{align*}
+101 &= 100 \times 1 + 1 \\
+100 &= 1 \times 100 + 0 \\
+\end{align*}
+$$
+
+3. gcd(111, 201) = 3
+
+$$
+\begin{align*}
+201 &= 111 \times 1 + 90 \\
+111 &= 90 \times 1 + 21 \\
+90 &= 21 \times 4 + 6 \\
+21 &= 6 \times 3 + 3 \\
+6 &= 3 \times 2 + 0 \\
+\end{align*}
+$$
+
+### Q10: Prove that if $n$ is a positive integer such that the sum of the divisors of $n$ is $n + 1$, then $n$ is prime.
+
+Để chứng minh rằng nếu $n$ là một số nguyên dương sao cho tổng các ước của $n$ là $n + 1$ thì $n$ là số nguyên tố, chúng ta có thể sử dụng phản chứng để chứng minh.
+
+Giả sử rằng $n$ không phải là số nguyên tố. Điều này có nghĩa là $n$ có thể được phân tích thành hai số nguyên dương $a$ và $b$, trong đó $1 < a < n$ và $1 < b < n$. Vì vậy, chúng ta có thể viết $n = ab$.
+
+Tổng các ước của $n$ có thể được biểu diễn như sau:
+
+$1 + n + a + b$
+
+Chúng ta biết rằng tổng các ước của $n$ bằng $n + 1$, vì vậy chúng ta có:
+
+$1 + n + a + b= n + 1$
+
+Rút gọn phương trình, ta có:
+
+$a + b= 1$
+
+Vì $a$ và $b$ là các số nguyên dương lớn hơn 1 nên tổng của chúng không thể bằng 1. Điều này mâu thuẫn với giả định của chúng ta.
+
+Do đó, giả định ban đầu của chúng ta rằng $n$ không phải là số nguyên tố phải sai. Do đó, nếu tổng các ước của $n$ là $n + 1$, thì $n$ phải là số nguyên tố.
+
+### Q11: Find the output of the recursive algorithm if input $n = 5$.
+
+```
+procedure f(n: integer):
+   If n = 1 then return 2
+      else return f(n − 1) · n;
+```
+
+1. Gọi hàm $f(5)$.
+2. Vì $n = 5$ không bằng 1, chúng ta chuyển đến câu lệnh "else".
+3. Trả về giá trị của $f(n - 1) \times n$, tức là $f(4) \times 5$.
+4. Gọi hàm $f(4)$.
+5. Vì $n = 4$ không bằng 1, chúng ta chuyển đến câu lệnh "else".
+6. Trả về giá trị của $f(n - 1) \times n$, tức là $f(3) \times 4$.
+7. Gọi hàm $f(3)$.
+8. Vì $n = 3$ không bằng 1, chúng ta chuyển đến câu lệnh "else".
+9. Trả về giá trị của $f(n - 1) \times n$, tức là $f(2) \times 3$.
+10. Gọi hàm $f(2)$.
+11. Vì $n = 2$ không bằng 1, chúng ta chuyển đến câu lệnh "else".
+12. Trả về giá trị của $f(n - 1) \times n$, tức là $f(1) \times 2$.
+13. Gọi hàm $f(1)$.
+14. Vì $n = 1$ bằng 1, chúng ta trả về 2.
+15. Thay thế $f(1)$ bằng 2, vậy $f(2) = f(1) \times 2 = 2 \times 2 = 4$.
+16. Thay thế $f(2) = 4$ vào bước trước, vậy $f(3) = f(2) \times 3 = 4 \times 3 = 12$.
+17. Thay thế $f(3) = 12$ vào bước trước, vậy $f(4) = f(3) \times 4 = 12 \times 4 = 48$.
+18. Thay thế $f(4) = 48$ vào bước trước, vậy $f(5) = f(4) \times 5 = 48 \times 5 = 240$.
+
+Vậy nên kết quả của thuật toán đệ quy trên với $n = 5$ là 240.
+
+### Q12: How many positive integers not exceeding 100 are divisible by exactly one of 6 or 9?
+
+Bước 1: Đếm số nguyên dương không vượt quá 100 chia hết cho 6.
+Bội số lớn nhất của 6 không vượt quá 100 là $96 = 6 \times 16$. Vì vậy, có 16 số nguyên dương chia hết cho 6 và không vượt quá 100.
+
+Bước 2: Đếm số nguyên dương không vượt quá 100 chia hết cho 9.
+Bội số lớn nhất của 9 không vượt quá 100 là $99 = 9 \times 11$. Vì vậy, có 11 số nguyên dương chia hết cho 9 và không vượt quá 100.
+
+Bước 3: Đếm số nguyên dương không vượt quá 100 chia hết cả cho 6 và 9.
+Bội số chung lớn nhất của 6 và 9 không vượt quá 100 là $54 = 6 \times 9$. Vì vậy, có 1 số nguyên dương chia hết cho cả 6 và 9 và không vượt quá 100.
+
+Bước 4: Số lượng tổng các số nguyên dương chia hết chính xác cho 6 hoặc 9 được tính bằng công thức: Tổng = Số lượng(chia hết cho 6) + Số lượng(chia hết cho 9) - Số lượng(chia hết cả cho 6 và 9)
+
+Tổng = 16 + 11 - 1 $=> Tổng = 26$
+
+Vậy có 26 số nguyên dương không vượt quá 100 mà chia hết chính xác cho một trong 6 hoặc 9.
+
+### Q13: Find a recursive definition for the set of positive integers NOT divisible by 3.
+
+```
+function recursive_not_divisible_by_3(n):
+    if n < 0:
+        return set()
+    elif n == 0:
+        return {0}
+    elif n % 3 == 0:
+        s = recursive_not_divisible_by_3(n - 3)
+        s.add(n - 1)
+        s.add(n - 2)
+    else:
+        s = recursive_not_divisible_by_3(n - 1)
+    return s
+```
