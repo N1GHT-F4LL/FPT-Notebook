@@ -1,0 +1,20 @@
+    public void f2(List<Cala> t) {
+        int minimum = t.get(0).getPrice();
+        if (t.size() != 1){
+            for (int i = 0; i < t.size(); i++) {
+                if (t.get(i).getPrice() <= minimum){
+                    minimum = t.get(i).getPrice();
+                }
+            }
+        }
+        int count = 0;
+        for (int i = 0; i < t.size(); i++) {
+            if (t.get(i).getPrice() == minimum) {
+                count++;
+                if (count == 2) {
+                    t.remove(i);
+                    break;
+                }
+            }
+        }
+    }
