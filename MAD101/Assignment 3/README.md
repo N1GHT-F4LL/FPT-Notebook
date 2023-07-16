@@ -7,7 +7,7 @@
 
 ### Q1: For which values of n are these graphs bipartite?
 
-- [x] ${K_n}$
+- [x] a) ${K_n}$
 
 ### Q2:
 
