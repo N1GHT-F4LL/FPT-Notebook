@@ -25,6 +25,10 @@ $\Rightarrow n = 2$ thì $K_n$ là `bipartite graph`.
 
 b) ${C_n}$
 
+Để $C_n$ là `bipartite graph` thì đồ thị phải thoả mãn định nghĩa của `bipartite graph` nhưng với $\forall n \geq 3$ dều không có cách nào để phân chia thành $2$ tập hợp.
+
+$\Rightarrow$ không có giá trị $n$ thoả mãn $C_n$ là `bipartite graph`.
+
 c) ${W_n}$
 
 d) ${Q_n}$
