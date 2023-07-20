@@ -30,20 +30,20 @@ graph LR;
 
 b) ${C_n}$
 
-Để $C_n$ là `bipartite graph` thì đồ thị phải thoả mãn định nghĩa của `bipartite graph` nhưng với $ \forall k \in \mathbb{N}^*$ luôn tạo được đồ thị $C_{2k}$ luôn có cách để chia đồ thị thành 2 tập hợp khác nhau.
+Để $C_n$ là `bipartite graph` thì đồ thị phải thoả mãn định nghĩa của `bipartite graph` nhưng với $\forall n = 2k \geq 4, k \in \mathbb{N}$ tạo được đồ thị $C_n$ luôn có cách để chia đồ thị thành 2 tập hợp khác nhau.
 
-Vậy với $\forall n = 2k, k \in \mathbb{N}^*$ là `bipartite graph`.
+Vậy với $\forall n = 2k \geq 4, k \in \mathbb{N}$ là `bipartite graph`.
 
 ```mermaid
-graph TB;
+graph LR;
     subgraph Set 2;
-        direction LR
+        direction TB
         B;
         D;
         F;
     end;
     subgraph Set 1;
-        direction LR
+        direction TB
         A;
         C;
         E;
