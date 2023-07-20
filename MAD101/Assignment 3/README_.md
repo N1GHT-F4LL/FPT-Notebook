@@ -53,7 +53,7 @@ d) ${Q_n}$
 
 ```mermaid
 graph TD;
-    A --> B;
-    B --> C;
-    C --> A;
+    A -- B;
+    B -- C;
+    C -- A;
 ```
