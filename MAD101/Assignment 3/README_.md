@@ -52,7 +52,7 @@ d) ${Q_n}$
 ### Q10:
 
 ```mermaid
-graph TD;
+graph;
     A -- B;
     B -- C;
     C -- A;
