@@ -132,7 +132,29 @@ có 4 loại đồ thị không dẳng cáu mà có 5 đỉnh và 3 cạnh
 ![image](https://github.com/N1GHT-F4LL/FPT-Notebook/assets/60804710/d9bcc39e-be2e-48f9-872b-c20404927942)
 
 
-### Q6:
+### Q6: Using alphabetical order, construct a binary search tree for the words in the sentence “[Your full name] is a student at FPT University.”
+
+<div align="center">
+“DANG”, “MINH”, “TRI”, “IS”, “A”, “STUDENT”, “AT”, “FPT”, “UNIVERSITY”
+</div>
+
+Chúng ta sử dụng giải thuật sau để tìm vị trí cho các từ trong cây tìm kiếm nhị phân
+
+![image](https://github.com/N1GHT-F4LL/FPT-Notebook/assets/60804710/2fdce728-1cfd-4cfe-b41d-708fa24b79c4)
+
+```mermaid
+graph TD;
+    DANG;
+    DANG-->MINH;
+    MINH-->TRI;
+    TRI-->A;
+    TRI-->IS;
+    A-->AT;
+    IS-->STUDENT;
+    STUDENT-->FPT;
+    FPT-->UNIVERSITY;
+
+```
 
 ### Q7:
 
