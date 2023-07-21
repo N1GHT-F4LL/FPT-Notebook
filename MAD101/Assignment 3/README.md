@@ -196,8 +196,63 @@ Kết quả mã hóa của xâu "287932" là: `00011101111010`.
 
 Số bit trung bình = $\frac{{(2 \times 2) + (1 \times 3) + (1 \times 3) + (1 \times 2) + (1 \times 2)}}{{2 + 1 + 1 + 1 + 1}} = \frac{14}{6} \approx 2.33$ bit
 
-### Q8:
+### Q8: Describe the trees produced by breadth-first search and depth-first search of the following graphs:
+
+(a) $K_n$:
+
+BFS: Cây tìm kiếm theo chiều rộng bao gồm tất cả các đỉnh, với đỉnh bắt đầu là gốc và các đỉnh còn lại là con của gốc.
+
+DFS: Cây tìm kiếm theo chiều sâu là cây bao trùm với tất cả các đỉnh của đồ thị, tuy nhiên thứ tự duyệt các đỉnh có thể thay đổi tùy vào đỉnh bắt đầu.
+
+(b) $W_n$, bắt đầu từ điểm trung tâm:
+
+BFS: Từ đỉnh trung tâm (hub), BFS duyệt các đỉnh theo khoảng cách từ trung tâm, đi qua các cánh đầu tiên sau đó là vòng ngoài của đồ thị.
+
+DFS: DFS bắt đầu từ đỉnh trung tâm sẽ duyệt các cánh trước, đi sâu nhất có thể theo từng cánh trước khi trở về đỉnh trung tâm.
+
 
 ### Q9:
+```mermaid
+graph TD;
+    minus[-]
+    multiply[*]
+    power[^]
+    plus1[+]
+    plus2[+]
+    x[X]
+    two[2]
+    three[3]
+    y[Y]
+    minus2[-]
+    three2[3]
+    x2[X]
+    five[5]
+    
+    minus2 --> multiply
+    minus2 --> five
+    multiply --> power
+    multiply --> minus
+    minus --> y
+    minus --> plus2
+    plus2 --> three2
+    plus2 --> x2
+    power --> plus1
+    power --> three
+    plus1 --> x
+    plus1 --> two
+```
 
-### Q10:
+Prefix Notation: ${- \times \uparrow + x \ 2 \ 3 - y + x \ 3 \ 5}$
+
+Post Notation: ${x \ 2 + 3 \uparrow y \ x \ 3 + - \times 5 -}$
+
+### Q10: Which connected simple graphs have exactly one spanning tree?
+
+Các đồ thị đơn liên thông có chính xác một cây bao trùm được gọi là "tree". Cây là một loại đồ thị liên thông cụ thể thỏa mãn các thuộc tính sau:
+
+1. Liên thông, nghĩa là tồn tại một đường đi giữa hai đỉnh bất kỳ của đồ thị.
+2. Nó không tuần hoàn, nghĩa là nó không có chu kỳ hoặc vòng lặp.
+3. Đồ thị có n - 1 cạnh, trong đó n là số đỉnh của đồ thị.
+
+
+**Em có thấy điểm Assignment của em thầy vẫn để là 1 ấy ạ, nhờ thầy sửa lại điểm theo bài em đã nạp và gửi qua mail. Em xin cảm ơn ạ. HE176821**
