@@ -103,6 +103,13 @@ graph TD;
     A3 --- B2;
     A3 --- B3;
 ```
+
+Vì mỗi phẩn tử trong cùng 1 set không có liên kết đến nhau, nên path để có thể đi đến 2 đỉnh kể nhau là lẻ, $\Rightarrow n = 25$ có tồn tại path đi giữa 2 đỉnh kề nhau.
+vì vậy số path có thể nếu lấy cố định 1 đỉnh A đến 1 đỉnh liền kề B khác là $3^24$ vì từ đỉnh A ở set 1 có 3 sự lựa chọn để đến set 2, và cũng có 3 sự lựa chọn để đi từ set 2 về set 1.
+
+b) n = 25 + 1 = 26
+chiều dài path là chẵn nên không tồn tại path nào thoả mãn.
+
 ### Q4:
 
 ### Q5:
