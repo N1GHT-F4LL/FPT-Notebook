@@ -156,7 +156,45 @@ graph TD;
 
 ```
 
-### Q7:
+### Q7: Use `Huffman coding` to encode the symbols in string "287932"
+
+`Student ID: HE176821`
+`String to encode: 287932`
+
+Chúng ta sử dụng giảti thuật `Huffman` sau để giải quyết bài toán
+
+![image](https://github.com/N1GHT-F4LL/FPT-Notebook/assets/60804710/5b7a75bc-541b-4564-9bb1-ff0ef9534fb6)
+
+```mermaid
+flowchart TD;
+    A[6] -- 0 --> B[4]
+    A[6] -- 1 --> C[2]
+    B[4] -- 0 --> D["2|2"]
+    B[4] -- 1 --> E[2]
+    E[2] -- 0 --> F["3|1"]
+    E[2] -- 1 --> G["8|1"]
+    C[2] -- 0 --> I["7|1"]
+    C[2] -- 1 --> K["9|1"]
+    style D fill:#fff,color: black
+    style F fill:#fff,color: black
+    style G fill:#fff,color: black
+    style I fill:#fff,color: black
+    style K fill:#fff,color: black
+```
+
+Kết quả thu được bảng sau
+
+| Ký tự | Tần số | Mã Huffman |
+|-------|-------|------------|
+| 2     | 2     | `00`       |
+| 3     | 1     | `010`      |
+| 8     | 1     | `011`      |
+| 7     | 1     | `10`       |
+| 9     | 1     | `11`       |
+
+Kết quả mã hóa của xâu "287932" là: `00011101111010`.
+
+Số bit trung bình = $\frac{{(2 \times 2) + (1 \times 3) + (1 \times 3) + (1 \times 2) + (1 \times 2)}}{{2 + 1 + 1 + 1 + 1}} = \frac{14}{6} \approx 2.33$ bit
 
 ### Q8:
 
