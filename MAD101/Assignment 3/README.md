@@ -83,12 +83,12 @@ a) $n =$ sum of digit in student ID $\Rightarrow n = 1 + 7 + 6 + 8 + 2 + 1 = 25$
 title: K3,3 Bipartite Graph
 ---
 graph TD;
-    subgraph SetA;
+    subgraph Set1;
     A1;
     A2;
     A3;
     end;
-    subgraph SetB;
+    subgraph Set2;
     B1;
     B2;
     B3;
@@ -105,12 +105,26 @@ graph TD;
 ```
 
 Vì mỗi phẩn tử trong cùng 1 set không có liên kết đến nhau, nên path để có thể đi đến 2 đỉnh kể nhau là lẻ, $\Rightarrow n = 25$ có tồn tại path đi giữa 2 đỉnh kề nhau.
-vì vậy số path có thể nếu lấy cố định 1 đỉnh A đến 1 đỉnh liền kề B khác là $3^24$ vì từ đỉnh A ở set 1 có 3 sự lựa chọn để đến set 2, và cũng có 3 sự lựa chọn để đi từ set 2 về set 1.
+vì vậy số path có thể nếu lấy cố định 1 đỉnh A đến 1 đỉnh liền kề B khác là $3^{24}$ vì từ đỉnh A ở set 1 có 3 sự lựa chọn để đến set 2, và cũng có 3 sự lựa chọn để đi từ set 2 về set 1.
 
 b) n = 25 + 1 = 26
 chiều dài path là chẵn nên không tồn tại path nào thoả mãn.
 
-### Q4:
+### Q4:For which values of n do these graphs have an Euler circuit?
+
+Để tồn tại `Euler circuit` thì phải thoả mãn lý thuyết 
+
+```
+A connected multigraph with at least two vertices has an Euler circuit if and only if each of its vertices has even degree.
+```
+
+(a) $K_n$: Một đồ thị đầy đủ $K_n$ có $n$ đỉnh và mỗi đỉnh có bậc $n-1$. Vậy $K_n$ có vòng Euler khi và chỉ khi $n$ lẻ.
+
+(b) $C_n$: Một đồ thị vòng tròn $C_n$ có $n$ đỉnh và mỗi đỉnh có bậc là 2. Vậy $C_n$ có vòng Euler khi và chỉ khi $n \geq 3$.
+
+(c) $W_n$: Một đồ thị bánh xe $W_n$ có $n$ đỉnh và mỗi đỉnh có bậc là 3 và 1 đỉnh có bậc là $n - 1$. Vậy $W_n$ không có vòng Euler.
+
+(d) $Q_n$: Một đồ thị tứ giác $Q_n$ có $n$ đỉnh và mỗi đỉnh có bậc là n. Vậy $Q_n$ có vòng Euler khi và chỉ khi $n$ là số chẵn.
 
 ### Q5:
 
