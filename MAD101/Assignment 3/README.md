@@ -114,9 +114,8 @@ chiều dài path là chẵn nên không tồn tại path nào thoả mãn.
 
 Để tồn tại `Euler circuit` thì phải thoả mãn lý thuyết 
 
-```
-A connected multigraph with at least two vertices has an Euler circuit if and only if each of its vertices has even degree.
-```
+> A connected multigraph with at least two vertices has an Euler circuit if and only if each of its vertices has even degree.
+
 
 (a) $K_n$: Một đồ thị đầy đủ $K_n$ có $n$ đỉnh và mỗi đỉnh có bậc $n-1$. Vậy $K_n$ có vòng Euler khi và chỉ khi $n$ lẻ.
 
@@ -126,7 +125,12 @@ A connected multigraph with at least two vertices has an Euler circuit if and on
 
 (d) $Q_n$: Một đồ thị tứ giác $Q_n$ có $n$ đỉnh và mỗi đỉnh có bậc là n. Vậy $Q_n$ có vòng Euler khi và chỉ khi $n$ là số chẵn.
 
-### Q5:
+### Q5: How many non-isomorphic simple graphs are there with five vertices and three edges?
+
+có 4 loại đồ thị không dẳng cáu mà có 5 đỉnh và 3 cạnh
+
+![image](https://github.com/N1GHT-F4LL/FPT-Notebook/assets/60804710/d9bcc39e-be2e-48f9-872b-c20404927942)
+
 
 ### Q6:
 
