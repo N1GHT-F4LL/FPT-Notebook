@@ -23,13 +23,44 @@ $\Rightarrow$ Với `complete graph` mỗi đỉnh đều có cạnh nối các 
 
 $\Rightarrow n = 2$ thì $K_n$ là `bipartite graph`.
 
+```mermaid
+graph LR;
+    A --- B;
+```
+
 b) ${C_n}$
 
-Để $C_n$ là `bipartite graph` thì đồ thị phải thoả mãn định nghĩa của `bipartite graph` nhưng với $\forall n \geq 3$ dều không có cách nào để phân chia thành $2$ tập hợp.
+Để $C_n$ là `bipartite graph` thì đồ thị phải thoả mãn định nghĩa của `bipartite graph` nhưng với $\forall n = 2k \geq 4, k \in \mathbb{N}$ tạo được đồ thị $C_n$ luôn có cách để chia đồ thị thành 2 tập hợp khác nhau.
 
-$\Rightarrow$ không có giá trị $n$ thoả mãn $C_n$ là `bipartite graph`.
+Vậy với $\forall n = 2k \geq 4, k \in \mathbb{N}$ là `bipartite graph`.
+
+```mermaid
+graph LR;
+    subgraph Set 2;
+        direction TB
+        B;
+        D;
+        F;
+    end;
+    subgraph Set 1;
+        direction TB
+        A;
+        C;
+        E;
+    end;
+
+    A --- B;
+    B --- C;
+    C --- D;
+    D --- E;
+    E --- F;
+    F --- A;
+
+```
 
 c) ${W_n}$
+
+Đồ thị `wheel graph` luôn tồn tại 3 đỉnh liên tiếp được nối với nhau nên không có giá trị $n$ thoả mãn $C_n$ là `bipartite graph`.
 
 d) ${Q_n}$
 
