@@ -68,7 +68,11 @@ d) ${Q_n}$
 
 ### Q2: What is the sum of the entries in a row of the adjacency matrix for an undirected graph? For a directed graph?
 
-### Q3:
+Tổng các phần tử của hàng trong ma trận liền kề trong đồ thị vô hướng là bậc của đỉnh ở hàng đó.
+
+Tổng các phần tử của một hàng trong ma trận liền kề của đồ thị có hướng là bậc ra của đỉnh tương ứng. Bậc ra của một đỉnh là số cạnh đi ra khỏi đỉnh đó.
+
+### Q3: Find the number of paths of length n between any two adjacent vertices in $K_{3,3}$ for the following values of $n$:
 
 ### Q4:
 
