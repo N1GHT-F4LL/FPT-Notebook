@@ -64,7 +64,9 @@ c) ${W_n}$
 
 d) ${Q_n}$
 
-### Q2:
+Đồ thị lập phương tương tự như cách biểu diễn xâu nhị phân từ $0$ đến $2^n-1$, vì vậy luôn có thể chia thành 2 nhóm chẵn và lẻ. Vì vậy với $\forall n \in \mathbb{N}^*$ thì đồ thị ${Q_n}$ luôn là `bipartite graph`.
+
+### Q2: What is the sum of the entries in a row of the adjacency matrix for an undirected graph? For a directed graph?
 
 ### Q3:
 
