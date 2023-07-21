@@ -74,6 +74,35 @@ Tổng các phần tử của một hàng trong ma trận liền kề của đ�
 
 ### Q3: Find the number of paths of length n between any two adjacent vertices in $K_{3,3}$ for the following values of $n$:
 
+Student ID: `HE176821`
+
+a) $n =$ sum of digit in student ID $\Rightarrow n = 1 + 7 + 6 + 8 + 2 + 1 = 25$
+
+```mermaid
+---
+title: K3,3 Bipartite Graph
+---
+graph TD;
+    subgraph SetA;
+    A1;
+    A2;
+    A3;
+    end;
+    subgraph SetB;
+    B1;
+    B2;
+    B3;
+    end;
+    A1 --- B1;
+    A1 --- B2;
+    A1 --- B3;
+    A2 --- B1;
+    A2 --- B2;
+    A2 --- B3;
+    A3 --- B1;
+    A3 --- B2;
+    A3 --- B3;
+```
 ### Q4:
 
 ### Q5:
